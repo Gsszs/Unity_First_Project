@@ -522,6 +522,12 @@ GameObject:
   - component: {fileID: 215450023}
   - component: {fileID: 215450022}
   - component: {fileID: 215450021}
+  - component: {fileID: 215450027}
+  - component: {fileID: 215450026}
+  - component: {fileID: 215450025}
+  - component: {fileID: 215450024}
+  - component: {fileID: 215450028}
+  - component: {fileID: 215450029}
   m_Layer: 0
   m_Name: Idle (32x32)_0 (1)
   m_TagString: Untagged
@@ -662,6 +668,84 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &215450024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215450019}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b7057d31ed040e4594f59bd09bf60d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  temPocaoVida: 1
+--- !u!114 &215450025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215450019}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 711441ee268f66b42886898451534577, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerup: 1
+  vidaJogador: 100
+  dano: 120
+--- !u!114 &215450026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215450019}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea9d2ba48333e9e47b6603ede3da92b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &215450027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215450019}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e22e6bceaeb738d4c95ded150cc8b3e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &215450028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215450019}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 812dfcd24f1333a4390c6bf6ff3f5a90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pontosJogador: 49
+--- !u!114 &215450029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215450019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39d00d9ba9af7354ca4e7ae72eefc5f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Guerreiro: 1
 --- !u!1 &268283456
 GameObject:
   m_ObjectHideFlags: 0
@@ -1069,7 +1153,6 @@ GameObject:
   - component: {fileID: 358723704}
   - component: {fileID: 358723703}
   - component: {fileID: 358723702}
-  - component: {fileID: 358723705}
   m_Layer: 0
   m_Name: Idle (32x32)_0 (5)
   m_TagString: Untagged
@@ -1210,18 +1293,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &358723705
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 358723700}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea9d2ba48333e9e47b6603ede3da92b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &392973833
 GameObject:
   m_ObjectHideFlags: 0
@@ -3888,7 +3959,6 @@ GameObject:
   - component: {fileID: 1278817714}
   - component: {fileID: 1278817713}
   - component: {fileID: 1278817712}
-  - component: {fileID: 1278817715}
   m_Layer: 0
   m_Name: Idle (32x32)_0 (2)
   m_TagString: Untagged
@@ -4029,21 +4099,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1278817715
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1278817710}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 711441ee268f66b42886898451534577, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  powerup: 1
-  vidaJogador: 100
-  dano: 30
 --- !u!1 &1322011911
 GameObject:
   m_ObjectHideFlags: 0
@@ -4886,7 +4941,6 @@ GameObject:
   - component: {fileID: 1614707666}
   - component: {fileID: 1614707665}
   - component: {fileID: 1614707664}
-  - component: {fileID: 1614707667}
   m_Layer: 0
   m_Name: Idle (32x32)_0
   m_TagString: Untagged
@@ -5027,18 +5081,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1614707667
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1614707662}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e22e6bceaeb738d4c95ded150cc8b3e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1672516874
 GameObject:
   m_ObjectHideFlags: 0
