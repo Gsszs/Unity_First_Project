@@ -12,26 +12,27 @@ dentro da função-evento Update).
 
 public class Ex08 : MonoBehaviour
 {
-    [SerializeField] int hora = 1, dia = 1;
+    [SerializeField] int hora = 0, dia = 0, segundos = 0;
     void Start()
     {   
-        while(true)
-        {
-            print("Horas: " + hora + " Dias: " + dia);
-            Task.Delay(10 * 1000);
-
-            if (hora == 24)
-            {
-                hora = 0;
-                dia += 1;
-            }
-        }
         
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        segundos++;
+        if (segundos % 1000 == 0)
+        {
+            hora++;
+            print("Horas: " + hora);
+        }
+
+        if (hora == 24)
+        {
+            hora = 0;
+            dia += 1;
+            print(dia <= 1 ? "Dia: " + dia : "Dias: " + dia);
+        }
     }
 }

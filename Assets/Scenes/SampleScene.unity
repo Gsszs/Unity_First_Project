@@ -528,6 +528,7 @@ GameObject:
   - component: {fileID: 215450024}
   - component: {fileID: 215450028}
   - component: {fileID: 215450029}
+  - component: {fileID: 215450030}
   m_Layer: 0
   m_Name: Idle (32x32)_0 (1)
   m_TagString: Untagged
@@ -740,12 +741,25 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 215450019}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 39d00d9ba9af7354ca4e7ae72eefc5f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Guerreiro: 1
+--- !u!114 &215450030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215450019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfd7d6bb14e818147aff4da26a1fd612, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  faces: 0.5
 --- !u!1 &268283456
 GameObject:
   m_ObjectHideFlags: 0
