@@ -529,6 +529,8 @@ GameObject:
   - component: {fileID: 215450028}
   - component: {fileID: 215450029}
   - component: {fileID: 215450030}
+  - component: {fileID: 215450031}
+  - component: {fileID: 215450032}
   m_Layer: 0
   m_Name: Idle (32x32)_0 (1)
   m_TagString: Untagged
@@ -754,12 +756,41 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 215450019}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dfd7d6bb14e818147aff4da26a1fd612, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   faces: 0.5
+--- !u!114 &215450031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215450019}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30f94cdb33cd9004b9ea990efe938653, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hora: 0
+  dia: 0
+  segundos: 0
+--- !u!114 &215450032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215450019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 968e4efc06fd765419c2f679f86a6376, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeA: 0
+  timeB: 0
 --- !u!1 &268283456
 GameObject:
   m_ObjectHideFlags: 0
