@@ -7,7 +7,7 @@ exiba "Missão bem-sucedida"; caso contrário, "Missão
 incompleta".
 */
 
-public class Ex5 : MonoBehaviour
+public class Ex05 : MonoBehaviour
 {
 
     [SerializeField] int pontosJogador = 30;
