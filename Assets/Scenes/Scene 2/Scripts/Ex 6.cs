@@ -12,7 +12,7 @@ public class Ex6 : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        for (int i = 0; i <= 1000; i++)
+        for (int i = 0; i <= 10000; i++)
         {
             if (i % 3 == 0 && i % 5 == 0)
             {
