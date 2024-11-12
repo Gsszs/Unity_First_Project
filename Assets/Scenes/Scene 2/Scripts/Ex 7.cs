@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 /*
@@ -7,15 +8,12 @@ encontre o maior valor.
 
 public class Ex7 : MonoBehaviour
 {
-    int[] nums = { 12, 69, 88, 86, 78, 65 };
+    [SerializeField] int[] nums = { 12, 69, 88, 86, 78, 65 };
     void Start()
     {
-        int maior = 0;
-        foreach(int num in nums)
-        {
-            if (num > maior) { maior = num; }
-        }
-        print(maior);
+        Array.Sort(nums);
+        Array.Reverse(nums);
+        print($"Maior número {nums[0]}");
     }
 
     // Update is called once per frame
