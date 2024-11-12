@@ -14,7 +14,7 @@ public class Desafio1 : MonoBehaviour
         int consoantes = 0;
         foreach(char c in frase.ToLower())
         {
-            if (Char.IsDigit(c) || vogais.Contains(c) || !Char.IsLetter(c)) { continue; }
+            if (vogais.Contains(c) || !Char.IsLetter(c)) { continue; }
             consoantes++;
         }
         print($"A frase \"{frase}\" tem {consoantes} consoantes.");
